@@ -23,7 +23,7 @@
 
         <section id="cart">
 
-            <section class="cartPiece first">
+            <section class="cartPiece current first" data-num="first">
 
                 <label for="fName">First Name</label>
                 <input type="text" name="fName" />
@@ -36,7 +36,7 @@
 
             </section>
 
-            <section class="cartPiece second">
+            <section class="cartPiece hidden second" data-num="second">
 
                 <label for="state">State</label>
                 <input type="text" name="state" />
@@ -52,7 +52,7 @@
 
             </section>
 
-            <section class="cartPiece third">
+            <section class="cartPiece hidden third" data-num="third">
 
                 <label for="class">Class</label>
                 <input type="text" name="class" />
@@ -70,6 +70,20 @@
 
             </section>
 
+            <section class="steps">
+                <div class="step first current"></div>
+                <div class="step second"></div>
+                <div class="step third"></div>
+                <p>Step 1 of 3</p>
+            </section>
+
+            <input type="button" value="Previous" class="hidden" />
+            <input type="button" value="Next" />
+
+        </section>
+
+        <section class="output">
+
         </section>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
@@ -79,10 +93,10 @@
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
-            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-            s.parentNode.insertBefore(g,s)}(document,'script'));
+            // var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            // (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            // g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            // s.parentNode.insertBefore(g,s)}(document,'script'));
         </script>
     </body>
 </html>

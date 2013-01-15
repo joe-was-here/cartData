@@ -93,7 +93,39 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+label, input {
+    display:block;
+    margin:5px 0;
+}
 
+input[type=button] {
+    margin:10px 10px 0 0;
+    clear:both;
+}
+
+#cart {
+    width:600px;
+    margin:0 auto;
+    padding-top:20px;
+}
+
+.steps p {
+    clear:both;
+}
+
+.step {
+    width:15px;
+    height:15px;
+    border-radius:15px;
+    border:1px solid #000;
+    float:left;
+    margin:15px 20px 10px 0;
+    background:yellow;
+}
+
+.step.current {
+    background:blue;
+}
 
 
 
